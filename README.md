@@ -9,7 +9,8 @@ exemplo de expressão condicional ternária neste exercicio:
  
 	 //Leia: expressão entre ( ) válida (?) SIM faça isso SENÂO (:) faça isso aqui.
 		
-		/* Esta linha 30 é uma expressão condicional ternária, que seria o mesmo que:
+		/* Que seria o mesmo que:
+		
 		 * if (getAnualIncome() < 20000.00) {
 			individualTax = getAnualIncome() * 0.15;
 		} else {

@@ -5,9 +5,9 @@ correção em https://www.youtube.com/watch?v=eDsS3JM5iXw
 
 exemplo de expressão condicional ternária neste exercicio:
 
- double individualTax = (getAnualIncome() < 20000.00) ? getAnualIncome() * 0.15 : getAnualIncome() * 0.25;  
+	 double individualTax = (getAnualIncome() < 20000.00) ? getAnualIncome() * 0.15 : getAnualIncome() * 0.25;  
  
- //Leia: expressão entre ( ) válida (?) SIM faça isso SENÂO (:) faça isso aqui.
+	 //Leia: expressão entre ( ) válida (?) SIM faça isso SENÂO (:) faça isso aqui.
 		
 		/* Esta linha 30 é uma expressão condicional ternária, que seria o mesmo que:
 		 * if (getAnualIncome() < 20000.00) {

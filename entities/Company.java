@@ -22,17 +22,13 @@ public class Company extends TaxPayer {
 	}
 
 	// método abstrato sobrescrito da superclasse abstrata TaxPayer:
-	double companyTax = 0.0;
-
+	
 	@Override
 	public Double tax() {
-
 		if (numberOfEmployees > 10) {
-			companyTax = getAnualIncome() * 0.14;
+			return getAnualIncome() * 0.14;
 		} else {
-			companyTax = getAnualIncome() * 0.16;
+			return getAnualIncome() * 0.16;
 		}
-		return companyTax;
 	}
-
 }

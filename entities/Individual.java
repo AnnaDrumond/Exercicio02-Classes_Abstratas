@@ -23,15 +23,20 @@ public class Individual extends TaxPayer {
 
 	// método abstrato sobrescrito da superclasse abstrata TaxPayer:
 	
-	double individualTax = 0.0;
+	
 	@Override
 	public Double tax() {
 		
-		if (getAnualIncome() < 20000.00) {
+		// Leia: expressão entre () válida ? SIM faça isso SENÂO (:) faça isso aqui.
+		double individualTax = (getAnualIncome() < 20000.00) ? getAnualIncome() * 0.15 : getAnualIncome() * 0.25;
+		
+		/* Esta linha 30 é uma expressão condicional ternária, que seria o mesmo que:
+		 * if (getAnualIncome() < 20000.00) {
 			individualTax = getAnualIncome() * 0.15;
 		} else {
 			individualTax = getAnualIncome() * 0.25;
-		}
+		} 
+		 */
 		
 		if ( healthExpenditures > 0) {
 			individualTax -= getHealthExpenditures() * 0.5;

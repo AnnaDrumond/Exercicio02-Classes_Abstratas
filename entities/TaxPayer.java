@@ -38,6 +38,7 @@ public abstract class TaxPayer {
 	// São métodos que não possuem implementação.
 	// Métodos precisam ser abstratos quando a classe é genérica demais para conter sua implementação
 	
+	// è importante este TAX ficar na superclasse genérica, para que depois eu possa colocar tudo em uma mesma lista chamando simplesmente TAX
 	public abstract Double tax();
 	
 	// Como o método é abstrato, obrigatoriamente esta classe deve ser também abstrata.

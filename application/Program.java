@@ -51,11 +51,11 @@ public class Program {
 
 		double sum = 0.0;
 		for (TaxPayer element : list) {
-			System.out.printf(element.getName() + ": § " + String.format("%.2f",element.tax()));
+			System.out.printf(element.getName() + ": § " + String.format("%.2f%n",element.tax()));
 			sum = sum + element.tax();
 		}
 		System.out.println();
-		System.out.printf("TOTAL TAXES: %.2f", sum);
+		System.out.printf("TOTAL TAXES: $%.2f", sum);
 
 	}
 
